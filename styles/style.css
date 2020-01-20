@@ -1,0 +1,83 @@
+/* CSS Zen guarden assignemtn by Ivan Gibson */
+
+  /* Setting background images and style */
+
+#css-zen-garden {
+  background-image: linear-gradient(rgba(240, 255, 240, 0.5), rgba(240, 255, 240, 0.6)), url("../img/zenBackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+  /* setting some defaults */
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Kaushan Script', cursive;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+a {
+  color: #000;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.page-wrapper section {
+  margin-left: 2%;
+  width: 68%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.3em;
+  text-decoration: underline;
+  /* underline offset only compatable with Firefox but I wanted to play with it anyway. */
+  text-underline-offset: 4px;
+}
+
+#zen-intro > section:nth-child(2n+1) {
+  border-bottom: 1px solid black;
+  background-color: #A8BF8299;
+}
+
+/* using nth child to the nth to allow for future sections to be added */
+.supporting > section:nth-child(2n+2) {
+  border-bottom: 1px solid black;
+  background-color: #A8BF8299;
+}
+
+section ~ section {
+  /* no idea what I want to style with this combinator
+  but added it for the assignment */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+}
+
+#design-selection {
+  width: 100%
+  margin: 0;
+}
+.sidebar a {
+  font-family: 'Raleway', sans-serif;
+}
+
+footer a {
+  display: none;
+}
